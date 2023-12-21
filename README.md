@@ -142,29 +142,33 @@ link to a large image in the console.
 
 ## 6 - Connecting the library
 
-The basicLightbox library provides a fully functional modal window that is
-perfect for our task. Use the jsdelivr CDN service and add a link to the
-library's minified (.min) JS and CSS files to the HTML file.
+The [basicLightbox](https://github.com/electerious/basicLightbox/tree/master)
+library provides a fully functional modal window that is perfect for our task.
+Use the jsdelivr
+[CDN service](https://www.jsdelivr.com/package/npm/basiclightbox?path=dist) and
+add a link to the library's minified (.min) JS and CSS files to the HTML file.
 
 ## 7 - Modal window
 
 Add your code so that when you click on the gallery element the modal window of
 the connected library opened. In order to find out how initialize a modal window
-in your code and how to use it, see with documentation and examples.
+in your code and how to use it, see with
+[documentation](https://github.com/electerious/basicLightbox#readme) and
+[examples](https://basiclightbox.electerious.com/).
 
 ## 8 - Large image
 
 Use your code to get a link to the large one image to replace the value of the
 src attribute of the `<img>` element in the modal window before opening. Use the
 ready markup of a modal window with an image from the examples of the
-basicLightbox library.
+[basicLightbox](https://basiclightbox.electerious.com/) library.
 
 ## 9 - Closing from the keyboard
 
 Add the functionality of closing the modal window after pressing the Escape key.
 Make it so that listening to the keyboard is only as long as the modal window is
-open. The basicLightbox library contains a method for soft closing of the modal
-window.
+open. The [basicLightbox](https://basiclightbox.electerious.com/) library
+contains a method for soft closing of the modal window.
 
 # What the mentor will pay attention to during the inspection:
 

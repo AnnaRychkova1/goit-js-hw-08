@@ -96,6 +96,7 @@ function onGalleryListClick(evt) {
     }
 
     const currentImg = evt.target.dataset.source;
+    const currentDescr = evt.target.alt;
 
 
     const instance = basicLightbox.create(
@@ -104,6 +105,7 @@ function onGalleryListClick(evt) {
         <img
         class="modal-image"
         src="${currentImg}"
+        alt="${currentDescr}"
       />
     </div>
 `,

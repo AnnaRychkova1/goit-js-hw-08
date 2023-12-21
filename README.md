@@ -24,9 +24,9 @@ To do this, add a gallery container tag to the HTML code — an unordered list o
 To create gallery elements you will need data. Add this array of objects to your
 JavaScript file. Each object represents one gallery element.
 
-- preview — link to a small version of the image for the gallery card
-- original — a link to a large version of the image for the modal window
-- description — text description of the image, for the alt attribute of the
+- `preview` — link to a small version of the image for the gallery card
+- `original` — a link to a large version of the image for the modal window
+- `description` — text description of the image, for the `alt` attribute of the
   small image and the caption of the large image in the modal.
 
 ```
@@ -102,9 +102,9 @@ const images = [
 You have a container in which you can add elements galleries, and the data by
 which they can be created. It's time to fill the gallery marking
 
-Use the images object array and this gallery element HTML template and create in
-the JavaScript code of the element markup, then add all the markup inside
-ul.gallery. Do not add any HTML tags other than those contained in this
+Use the `images` object array and this gallery element HTML template and create
+in the JavaScript code of the element markup, then add all the markup inside
+`ul.gallery`. Do not add any HTML tags other than those contained in this
 template.
 
 ```
@@ -120,14 +120,14 @@ template.
 </li>
 ```
 
-- In the src attribute of the `<img>` tag, we specify a link to a small version
-  of the image.
-- For the alt attribute, we use the description of the image.
-- Link to large image must be stored in the data-attribute source on the `<img>`
-  element, and pointed to href link.
-- Note that the image is surrounded by a link that has the href attribute points
-  to the path to the image file. So you can click on it cause the image to be
-  downloaded to the user's computer. Ban this one default behavior.
+- In the `src` attribute of the `<img>` tag, we specify a link to a small
+  version of the image.
+- For the `alt` attribute, we use the description of the image.
+- Link to large image must be stored in the data-attribute `source` on the
+  `<img>` element, and pointed to `href` link.
+- Note that the image is surrounded by a link that has the `href` attribute
+  points to the path to the image file. So you can click on it cause the image
+  to be downloaded to the user's computer. Ban this one default behavior.
 
 ## 4 - Styles
 
@@ -137,16 +137,17 @@ Add styling to the gallery according to the layout.
 
 It's time to add the functionality of listening for clicks on elements gallery
 and getting a link to a large image when clicked. For this use the delegation
-technique on ul.gallery. So far when clicking on an element gallery display a
+technique on `ul.gallery`. So far when clicking on an element gallery display a
 link to a large image in the console.
 
 ## 6 - Connecting the library
 
 The [basicLightbox](https://github.com/electerious/basicLightbox/tree/master)
 library provides a fully functional modal window that is perfect for our task.
-Use the jsdelivr
-[CDN service](https://www.jsdelivr.com/package/npm/basiclightbox?path=dist) and
-add a link to the library's minified (.min) JS and CSS files to the HTML file.
+Use the
+[CDN service jsdelivr](https://www.jsdelivr.com/package/npm/basiclightbox?path=dist)
+and add a link to the library's minified (`.min`) JS and CSS files to the HTML
+file.
 
 ## 7 - Modal window
 
@@ -159,20 +160,20 @@ in your code and how to use it, see with
 ## 8 - Large image
 
 Use your code to get a link to the large one image to replace the value of the
-src attribute of the `<img>` element in the modal window before opening. Use the
-ready markup of a modal window with an image from the examples of the
+`src` attribute of the `<img>` element in the modal window before opening. Use
+the ready markup of a modal window with an image from the examples of the
 [basicLightbox](https://basiclightbox.electerious.com/) library.
 
 ## 9 - Closing from the keyboard
 
-Add the functionality of closing the modal window after pressing the Escape key.
-Make it so that listening to the keyboard is only as long as the modal window is
-open. The [basicLightbox](https://basiclightbox.electerious.com/) library
-contains a method for soft closing of the modal window.
+Add the functionality of closing the modal window after pressing the `Escape`
+key. Make it so that listening to the keyboard is only as long as the modal
+window is open. The [basicLightbox](https://basiclightbox.electerious.com/)
+library contains a method for soft closing of the modal window.
 
 # What the mentor will pay attention to during the inspection:
 
-- The live page displays a gallery of images from the images array
+- The live page displays a gallery of images from the `images` array
 - The image gallery is stylized according to the layout
 - Gallery data is generated dynamically in JS
 - When listening to the click event on gallery items used acceptance of
@@ -182,5 +183,5 @@ contains a method for soft closing of the modal window.
 - When you click on an element of the gallery, a connected modal window opens
   library that contains an enlarged version of the clicked image
 - Implemented the functionality of closing the modal window after pressing the
-  key Escape
+  key `Escape`
 - Keyboard event listening happens only as long as it is open modal window

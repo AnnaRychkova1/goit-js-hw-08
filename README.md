@@ -13,7 +13,7 @@ goals This process is called problem decomposition.
 
 It is logical to start by creating something where we will add gallery elements.
 To do this, add a gallery container tag to the HTML code — an unordered list of
-"gallery" class.
+`gallery` class.
 
 ```
 <ul class="gallery"></ul>

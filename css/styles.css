@@ -27,7 +27,7 @@
 }
 
 .gallery-link:hover {
-    cursor: url("/img/zoom-in.svg"), auto;
+    cursor: url("./img/zoom-in.svg"), auto;
 }
 
 .gallery-image {
